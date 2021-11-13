@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +16,8 @@ html {
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
 }
 
 html::-webkit-scrollbar {
@@ -90,6 +93,7 @@ a {
     margin: 0 0 0 10rem;
     font-size: 1.7vw;
     margin-bottom: 3rem;
+    font-weight: 100;
 }
 
 .intro-cont a {
@@ -101,9 +105,9 @@ a {
 }
 
 section a:hover {
-    font-stretch: expanded;
-    transition: .1s;
+    transition: .5s;
     padding-right: 7rem;
+    letter-spacing: 1px;
 }
 
 .about {
@@ -116,13 +120,13 @@ section a:hover {
     margin-bottom: 4rem;
 }
 
-.about span {
+.about-titulo span {
     color: var(---main-color);
 }
 
 .about-img img {
     width: 100%;
-    max-height: 45vh;
+    max-height: 60vh;
 }
 
 .about-cont {
@@ -136,16 +140,42 @@ section a:hover {
 }
 
 .txt {
-    margin-top: 5vh;
     margin-left: 2vw;
+    margin-top: 20vh;
 }
 
 .txt h1 {
-    font-size: 4vh;
-    margin-bottom: 2rem;
+    font-size: 3vh;
+    margin-bottom: 4rem;
 }
 
 .txt p {
     font-size: 2vh;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    font-weight: 100;
+}
+
+.txt a {
+    width: 55vw;
+    font-size: 2rem;
+    background: var(---main-color);
+    padding: 1rem;
+}
+
+.conteudo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 400px);
+    margin: 0 0 0 10rem;
+    grid-row-gap: 2em;
+}
+
+.conteu-box {
+    text-align: center;
+    border: var(--border);
+    width: 380px;
+    padding-bottom: 10rem;
+}
+
+.conteu-box img {
+    margin-top: 5vw;
 }
